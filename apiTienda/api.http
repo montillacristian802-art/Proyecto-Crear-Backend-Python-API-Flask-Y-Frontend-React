@@ -1,0 +1,33 @@
+### 1. Obtener todos los productos
+GET http://127.0.0.1:5000/api/v1/productos/
+Accept: application/json
+
+### 2. Obtener un producto por ID
+GET http://127.0.0.1:5000/api/v1/productos/1
+Accept: application/json
+
+### 3. Crear un producto
+POST http://127.0.0.1:5000/api/v1/productos/
+Content-Type: application/json
+
+{
+    "proCodigo": "C1123",
+    "proNombre": "Tenis",
+    "proPrecio": 28000,
+    "proCategoria": "Calzado"
+}
+
+### 4. Actualizar un producto
+PUT http://127.0.0.1:5000/api/v1/productos/1
+Content-Type: application/json
+
+{
+    "proCodigo": "C1123",
+    "proNombre": "Tenis deportivos",
+    "proPrecio": 35000,
+    "proCategoria": "Calzado"
+}
+
+### 5. Eliminar un producto
+DELETE http://127.0.0.1:5000/api/v1/productos/1
+Accept: application/json
